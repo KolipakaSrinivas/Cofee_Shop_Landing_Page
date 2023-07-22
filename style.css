@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700&display=swap');
+
+/*---------CSS BAICS STYLES START -------------*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, p, span, ul, li a {
+    margin: 0;
+    padding: 0;
+}
+
+*,*::after ,*::before {
+    box-sizing: border-box;
+}
+
+  ul li {
+    list-style: none;
+ } 
+
+ a {
+    text-decoration: none;
+ }
+
+
+ /*---------CSS BAIC STYLES END -------------*/
+
+
+ /*--------- NAVBAR START -----------*/
+
+ header {
+    background: linear-gradient(90deg, #FFDCAB 0%, #AB6B2E 100%);
+ }
+
+ .navbar--container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 10%;
+    align-items:center;
+ }
+ .navbar--search input {
+    width: 12.58606rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+    border-radius: 2.1875rem;
+    border: 1px solid #000;
+    background: transparent;
+ }
+
+ ul li {
+    display: inline-block;
+    padding-left: 4em;
+    color: #2F2105;
+    font-family: 'Syne', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.1425rem;
+ }
+
+
+
+
+
+
+/*-----------NAVBAR END  ----------*/
