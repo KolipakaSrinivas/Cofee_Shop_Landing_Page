@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700&display=swap');
 
+@font-face {
+   font-family: IM FELL Great Primer SC;
+   src: url(./fonts/IMFeGPsc28P.ttf);
+ }
+
 /*---------CSS BAICS STYLES START -------------*/
 
 body {
     margin: 0;
     padding: 0;
+    font-family: IM FELL Great Primer SC;
 }
 
 h1, h2, h3, p, span, ul, li a {
@@ -18,6 +24,7 @@ h1, h2, h3, p, span, ul, li a {
 
   ul li {
     list-style: none;
+    font-family: IM FELL Great Primer SC;
  } 
 
  a {
@@ -37,7 +44,7 @@ h1, h2, h3, p, span, ul, li a {
  .navbar--container {
     display: flex;
     justify-content: space-between;
-    padding: 2em 10%;
+    padding: 2em 8%;
     align-items:center;
  }
  .navbar--search input {
@@ -49,16 +56,32 @@ h1, h2, h3, p, span, ul, li a {
     background: transparent;
  }
 
- ul li {
+ #search {
+   text-indent: 46px;
+   margin-right: 20px;
+ }
+
+
+
+ ul li  {
     display: inline-block;
-    padding-left: 4em;
-    color: #2F2105;
-    font-family: 'Syne', sans-serif;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.1425rem;
+    padding-left: 3em;
+ }
+
+ #search-incon {
+   position: relative;
+   top: 9px;
+   left: 36px;
+ }
+
+ ul li a {
+   color: #000;
+   font-family: IM FELL Great Primer SC;
+   font-size: 1.5rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   letter-spacing: 0.1425rem;
  }
 
 
