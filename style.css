@@ -180,12 +180,12 @@ header {
 .landing-page {
   background: url(./public/images/coffee-seeds/coffee-seeds-bg-1.png);
   background-repeat: no-repeat;
-  background-size: 170px;
+  background-size: 170px ;
   background-position-x: 66rem;
-  background-position-y: -12px ;
+  background-position-y: -12px;
   grid-template-columns: 1fr 1fr;
-  /* grid-template-rows: 1fr 1fr; */
-  padding: 4rem 6.5rem ;
+  grid-template-rows: 1fr 200px;
+  padding: 2rem 6.5rem ;
 
 }
 
@@ -258,9 +258,10 @@ header {
 }
 
 .social {
+  justify-content: end;
   width: 20rem;
   gap: 2rem;
-  align-self:self-end;
+  /* margin-left: 20rem; */
 }
 
 .social img {
@@ -269,18 +270,29 @@ header {
 }
 
 .header-dotes {
-  justify-content: center;
-  /* align-self: center; */
   gap: 0.5rem;
+  margin-left: 20rem;
 }
 
-.header-dotes li {
-  width: 15px;
-  height: 15px;
-  background-color: #000;
+.header-dotes li{
+  align-content: center;
+  width: 12px;
+  color: #FFF;
+  height: 12px;
+  background-color:white;
   border-radius: 50%;
-  line-height:1;
+  line-height:0.5;
 }
+
+.header-dotes-first-child {
+  width: 12px;
+  height: 12px;
+  color: #000;
+  background-color: #000;
+}
+
+
+
 
 .group-cups {
   position: relative;
@@ -293,7 +305,7 @@ header {
 
 .Pink-Cup {
   z-index: 9999;
-  top: -15px;
+  top: 30px;
   right: 150px;
   width: 300px;
   height: 350px;
@@ -301,14 +313,14 @@ header {
 
 .Orange-Cup {
   z-index: 9990;
-  top: -29px ;
+  top: 9px ;
   right: 7rem;
   width: 198px;
   height: 271px;
 }
 
 .Broun-Cup {
-  top: 3rem;
+  top: 6rem;
   right: 10rem;
   width: 231px; 
   height: 326px;
@@ -316,6 +328,7 @@ header {
 
 .social-meadia-links {
   grid-column: -3/-1;
-  /* align-items: center; */
-  /* justify-content: space-around; */
+  align-items: center;
+  justify-content: center;
+  
 }
