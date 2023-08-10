@@ -17,13 +17,13 @@ blockquote,
 dl,
 dd,
 ul,
-ol{
+ol {
   margin: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -62,9 +62,9 @@ select {
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {
@@ -76,11 +76,11 @@ select {
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .grid {
-    display: grid;
+  display: grid;
 }
 ul li {
   list-style: none;
@@ -95,8 +95,7 @@ a {
 }
 
 /* --------------- */
-/* navbar */
-
+/* navbar  start*/
 
 .search-box {
   position: relative;
@@ -111,9 +110,8 @@ a {
   background: transparent;
 }
 
-
 .nav-links li a {
-  color: var(--coffee-color, #2F2105);
+  color: var(--coffee-color, #2f2105);
   text-align: center;
   font-family: IM FELL Great Primer SC;
   font-size: 1.2rem;
@@ -125,7 +123,7 @@ a {
 
 ::placeholder {
   opacity: 1; /* Firefox */
-  color: #1D1D1D;
+  color: #1d1d1d;
   font-family: IM FELL Double Pica;
   font-size: 1rem;
   font-style: normal;
@@ -133,8 +131,9 @@ a {
   line-height: normal;
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: #1D1D1D;
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #1d1d1d;
   font-family: IM FELL Double Pica;
   font-size: 1rem;
   font-style: normal;
@@ -142,8 +141,9 @@ a {
   line-height: normal;
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
-  color: #1D1D1D;
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #1d1d1d;
   font-family: IM FELL Double Pica;
   font-size: 1rem;
   font-style: normal;
@@ -159,34 +159,34 @@ a {
   height: 24px;
 }
 
-
 .nav-links {
   gap: 5rem;
 }
 
 .nav-bar {
-  padding: 2rem 8rem ;
-  justify-content:space-evenly;
+  padding: 2rem 8rem;
+  justify-content: space-evenly;
   align-items: center;
 }
-
+/* Navbar end */
 /* ------------ */
-/* Header */
+/* ----------- */
+/* Header start */
 
 header {
-  background: linear-gradient(90deg, #FFDCAB 0%, #AB6B2E 100%);
+  background: linear-gradient(90deg, #ffdcab 0%, #ab6b2e 100%);
 }
 
 .landing-page {
-  background: url(./public/images/coffee-seeds/coffee-seeds-bg-1.png),url(./public/images/coffee-seeds/coffee-seeds-bg-2.svg);
-  background-repeat: no-repeat,no-repeat;
-  background-size: 170px ,170px;
-  background-position-x: 66rem,2px;
-  background-position-y: -12px,22rem;
+  background: url(./public/images/coffee-seeds/coffee-seeds-bg-1.png),
+    url(./public/images/coffee-seeds/coffee-seeds-bg-2.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 170px, 170px;
+  background-position-x: 66rem, 2px;
+  background-position-y: -12px, 22rem;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 200px;
-  padding: 3rem 9rem ;
-
+  padding: 3rem 9rem;
 }
 
 .header-content {
@@ -198,12 +198,12 @@ header {
 }
 
 .header-content-heading {
-  width: 500px; 
+  width: 500px;
 }
 
-.header-content-heading h1  {
+.header-content-heading h1 {
   /* word-spacing: 1rem; */
-  color: var(--coffee-color, #2F2105);
+  color: var(--coffee-color, #2f2105);
   font-family: IM FELL Double Pica;
   font-size: 2rem;
   font-style: normal;
@@ -213,7 +213,7 @@ header {
 }
 
 .coffee {
-  color: var(--primary-color, #FF902B);
+  color: var(--primary-color, #ff902b);
   font-family: IM FELL Double Pica;
   font-size: 2rem;
   font-style: normal;
@@ -246,13 +246,13 @@ header {
   border: none;
   padding: 1rem 2rem;
   border-radius: 50px;
-  background: var(--coffee-color, #2F2105);
-  color: #FFF;
+  background: var(--coffee-color, #2f2105);
+  color: #fff;
   text-align: center;
   font-family: IM FELL Double Pica;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400; 
+  font-weight: 400;
   line-height: normal;
   letter-spacing: 2.43px;
 }
@@ -274,14 +274,14 @@ header {
   margin-left: 20rem;
 }
 
-.header-dotes li{
+.header-dotes li {
   align-content: center;
   width: 12px;
-  color: #FFF;
+  color: #fff;
   height: 12px;
-  background-color:white;
+  background-color: white;
   border-radius: 50%;
-  line-height:0.5;
+  line-height: 0.5;
 }
 
 .header-dotes-first-child {
@@ -294,7 +294,6 @@ header {
 .group-cups {
   position: relative;
 }
-
 
 .group-cups img {
   position: absolute;
@@ -310,7 +309,7 @@ header {
 
 .Orange-Cup {
   z-index: 9990;
-  top: 9px ;
+  top: 9px;
   right: 7rem;
   width: 198px;
   height: 271px;
@@ -319,7 +318,7 @@ header {
 .Broun-Cup {
   top: 6rem;
   right: 10rem;
-  width: 231px; 
+  width: 231px;
   height: 326px;
 }
 
@@ -327,16 +326,14 @@ header {
   grid-column: -3/-1;
   align-items: center;
   justify-content: center;
-  
 }
-
+/*  Header End */
 /* --------------- */
 /* Card */
 
 .coffee-section {
-  background: #FDE9CC;
+  background: #fde9cc;
   padding: 3rem 9rem;
-  
 }
 
 .card-img {
@@ -347,7 +344,7 @@ header {
 .card {
   margin: auto;
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.40);
+  background: rgba(255, 255, 255, 0.4);
   width: 230px;
   height: 260px;
   display: flex;
@@ -360,7 +357,7 @@ header {
   height: 230px;
   flex-shrink: 0;
   border-radius: 12px;
-  background: #FFF;
+  background: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -368,7 +365,7 @@ header {
 }
 
 .card-content button {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: Inter;
   font-size: 0.8rem;
@@ -394,7 +391,7 @@ header {
 /* Our Most Popular */
 
 .cart-cards {
-  height: 100vh; 
+  height: 100vh;
 }
 
 .cards {
@@ -405,7 +402,7 @@ header {
 .cart-cards h1 {
   padding-bottom: 1rem;
   padding-left: 2rem;
-  color: var(--coffee-color, #2F2105);
+  color: var(--coffee-color, #2f2105);
   /* text-align: center; */
   font-family: IM FELL Great Primer SC;
   font-size: 32px;
@@ -417,7 +414,6 @@ header {
 
 /* ------------------ */
 /* about-us */
-
 
 #about-us {
   background: #fff;
@@ -433,14 +429,12 @@ header {
   background-size: auto;
   background-size: 100%;
   background-repeat: no-repeat;
- 
 }
 
-
-.about-us-content h1{
+.about-us-content h1 {
   width: 313px;
   height: 62.222px;
-  color: var(--primary-color, #FF902B);
+  color: var(--primary-color, #ff902b);
   font-family: Poppins;
   font-size: 32px;
   font-style: normal;
@@ -453,9 +447,9 @@ header {
   display: flex;
   width: 369px;
   height: 83px;
-  color: var(--coffee-color, #2F2105);
+  color: var(--coffee-color, #2f2105);
   font-family: Poppins;
-  font-size: 24px;  
+  font-size: 24px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -464,14 +458,14 @@ header {
 
 .about-us-content p {
   width: 478px;
-color: #FFF;
-font-family: Poppins;
-font-size: 18px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-letter-spacing: 0.72px;
-padding-bottom: 1.2rem;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.72px;
+  padding-bottom: 1.2rem;
 }
 
 .about-us-content button {
@@ -480,7 +474,7 @@ padding-bottom: 1.2rem;
   border-radius: 33px;
   background: #000;
   padding: 10px 37px;
-  color: #FFF;
+  color: #fff;
   font-family: Poppins;
   font-size: 1rem;
   font-weight: 700;
@@ -492,7 +486,6 @@ padding-bottom: 1.2rem;
   /* padding: 57px 41px; */
 }
 
-
 /* ----------------- */
 /* snaks-section */
 
@@ -503,17 +496,17 @@ padding-bottom: 1.2rem;
 
 #snaks-section h1 {
   padding-bottom: 2rem;
-  color: var(--primary-color, #FF902B);
+  color: var(--primary-color, #ff902b);
   font-family: IM FELL Great Primer SC;
   font-size: 32px;
   font-style: normal;
-  font-weight: 400; 
+  font-weight: 400;
   line-height: normal;
   letter-spacing: 3.04px;
 }
 
 .our-most-popular {
-  background: #FFDFB0;
+  background: #ffdfb0;
 }
 
 /* --------------- */
@@ -526,7 +519,7 @@ padding-bottom: 1.2rem;
 }
 
 .feedback-section h1 {
-  color: var(--primary-color, #FF902B);
+  color: var(--primary-color, #ff902b);
   font-family: Poppins;
   font-size: 32px;
   font-style: normal;
@@ -536,7 +529,7 @@ padding-bottom: 1.2rem;
 }
 
 .feedback-section p {
-  color: var(--coffee-color, #2F2105);
+  color: var(--coffee-color, #2f2105);
   font-family: Poppins;
   font-size: 24px;
   font-style: normal;
@@ -545,13 +538,13 @@ padding-bottom: 1.2rem;
   letter-spacing: 0.96px;
   width: 369px;
   height: 83px;
-  padding-top:  1rem;
+  padding-top: 1rem;
 }
 
 .feedback-img {
-  width: 200px; 
+  width: 200px;
   border-radius: 13px;
-  background: rgba(255, 255, 255, 0.40);
+  background: rgba(255, 255, 255, 0.4);
   height: 250px;
   align-items: center;
   justify-content: center;
@@ -571,10 +564,10 @@ padding-bottom: 1.2rem;
 }
 
 .feedback-review {
-  border: 0.4rem solid #AB6B2E;
+  border: 0.4rem solid #ab6b2e;
   width: 190px;
   height: 90px;
-  background: #D9D9D9;
+  background: #d9d9d9;
   left: 40px;
   top: 140px;
   position: absolute;
@@ -584,10 +577,104 @@ padding-bottom: 1.2rem;
   width: 201px;
   height: 39px;
   color: #000;
-  font-family: Poppins; 
+  font-family: Poppins;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.72px;
 }
+/* Footer Start */
+.footer {
+  position: relative;
+  gap: 2rem;
+  background: url(./public/images/email-img/email.png);
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 85%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer h1 {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.28px;
+}
+
+.footer input {
+  width: 486px;
+  height: 54px;
+  border-radius: 13px;
+  background: #fff;
+  outline: none;
+  border: none;
+  
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color: var(--light, #7E7D7A);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.64px;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--light, #7E7D7A);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.64px;
+  }
+  
+  ::placeholder {
+    color: var(--light, #7E7D7A);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.64px;
+  }
+
+.footer button {
+  right: 24.7rem;
+  bottom: 245px;
+  position: absolute;
+  display: inline-flex;
+  height: 44px;
+  padding: 12px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 13px;
+  background: var(--secondary, #2f2105);
+  box-shadow: 0px 4px 32px 0px rgba(223, 195, 124, 0.25);
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  outline: none;
+  border: none;
+
+}
+/* Footer End */
