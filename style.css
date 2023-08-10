@@ -37,7 +37,6 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  background: #FDE9CC;
 }
 
 /* A elements that don't have a class get default styles */
@@ -166,7 +165,7 @@ a {
 }
 
 .nav-bar {
-  padding: 2rem 3rem ;
+  padding: 2rem 8rem ;
   justify-content:space-evenly;
   align-items: center;
 }
@@ -179,14 +178,14 @@ header {
 }
 
 .landing-page {
-  background: url(./public/images/coffee-seeds/coffee-seeds-bg-1.png);
-  background-repeat: no-repeat;
-  background-size: 170px ;
-  background-position-x: 66rem;
-  background-position-y: -12px;
+  background: url(./public/images/coffee-seeds/coffee-seeds-bg-1.png),url(./public/images/coffee-seeds/coffee-seeds-bg-2.svg);
+  background-repeat: no-repeat,no-repeat;
+  background-size: 170px ,170px;
+  background-position-x: 66rem,2px;
+  background-position-y: -12px,22rem;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 200px;
-  padding: 2rem 6.5rem ;
+  padding: 3rem 9rem ;
 
 }
 
@@ -292,9 +291,6 @@ header {
   background-color: #000;
 }
 
-
-
-
 .group-cups {
   position: relative;
 }
@@ -337,25 +333,31 @@ header {
 /* --------------- */
 /* Card */
 
+.coffee-section {
+  background: #FDE9CC;
+  padding: 3rem 9rem;
+  
+}
+
 .card-img {
-  width: 150px;
-  height: 90px;
+  width: 170px;
+  height: 110px;
 }
 
 .card {
   margin: auto;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.40);
-  width: 210px;
-  height: 240px;
+  width: 230px;
+  height: 260px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .card-content {
-  width: 180px;
-  height: 210px;
+  width: 200px;
+  height: 230px;
   flex-shrink: 0;
   border-radius: 12px;
   background: #FFF;
@@ -367,23 +369,225 @@ header {
 
 .card-content button {
   color: #FFF;
-text-align: center;
-font-family: Inter;
-font-size: 0.8rem;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-background: #000;
-padding: 0.5rem 2rem;
-border-radius: 15px;
+  text-align: center;
+  font-family: Inter;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: #000;
+  padding: 0.8rem 2.8rem;
+  border-radius: 15px;
 }
 
 .card-content h2 {
   color: #000;
   text-align: center;
   font-family: Inter;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+/* --------------- */
+/* Our Most Popular */
+
+.cart-cards {
+  height: 100vh; 
+}
+
+.cards {
+  padding: 2rem 4rem;
+  flex-wrap: wrap;
+}
+
+.cart-cards h1 {
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  color: var(--coffee-color, #2F2105);
+  /* text-align: center; */
+  font-family: IM FELL Great Primer SC;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3.04px;
+}
+
+/* ------------------ */
+/* about-us */
+
+
+#about-us {
+  background: #fff;
+}
+
+.about-us {
+  gap: 10rem;
+  padding: 12rem 9rem;
+  height: 150vh;
+  width: 100%;
+  background: url(./public/images/wave-bg/wave.png);
+  background-repeat: repeat;
+  background-size: auto;
+  background-size: 100%;
+  background-repeat: no-repeat;
+ 
+}
+
+
+.about-us-content h1{
+  width: 313px;
+  height: 62.222px;
+  color: var(--primary-color, #FF902B);
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.28px;
+}
+
+.about-us-content h3 {
+  display: flex;
+  width: 369px;
+  height: 83px;
+  color: var(--coffee-color, #2F2105);
+  font-family: Poppins;
+  font-size: 24px;  
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.96px;
+}
+
+.about-us-content p {
+  width: 478px;
+color: #FFF;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.72px;
+padding-bottom: 1.2rem;
+}
+
+.about-us-content button {
+  border: none;
+  outline: none;
+  border-radius: 33px;
+  background: #000;
+  padding: 10px 37px;
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.coffee-table {
+  height: 360px;
+  width: 300px;
+  /* padding: 57px 41px; */
+}
+
+
+/* ----------------- */
+/* snaks-section */
+
+#snaks-section {
+  background: #fff;
+  padding: 3rem 9rem;
+}
+
+#snaks-section h1 {
+  padding-bottom: 2rem;
+  color: var(--primary-color, #FF902B);
+  font-family: IM FELL Great Primer SC;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400; 
+  line-height: normal;
+  letter-spacing: 3.04px;
+}
+
+.our-most-popular {
+  background: #FFDFB0;
+}
+
+/* --------------- */
+/* Feedback section */
+
+.feedbck-photos {
+  position: relative;
+  width: 200px;
+  height: 260px;
+}
+
+.feedback-section h1 {
+  color: var(--primary-color, #FF902B);
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.28px;
+}
+
+.feedback-section p {
+  color: var(--coffee-color, #2F2105);
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.96px;
+  width: 369px;
+  height: 83px;
+  padding-top:  1rem;
+}
+
+.feedback-img {
+  width: 200px; 
+  border-radius: 13px;
+  background: rgba(255, 255, 255, 0.40);
+  height: 250px;
+  align-items: center;
+  justify-content: center;
+}
+
+.feedback-galarey {
+  position: relative;
+  gap: 5rem;
+  height: 200px;
+}
+
+.feedback-img img {
+  width: 177px;
+  height: 223px;
+  align-items: center;
+  justify-content: center;
+}
+
+.feedback-review {
+  border: 0.4rem solid #AB6B2E;
+  width: 190px;
+  height: 90px;
+  background: #D9D9D9;
+  left: 40px;
+  top: 140px;
+  position: absolute;
+}
+
+.feedback-review p {
+  width: 201px;
+  height: 39px;
+  color: #000;
+  font-family: Poppins; 
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.72px;
 }
